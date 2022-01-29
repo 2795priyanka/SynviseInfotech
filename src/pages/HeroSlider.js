@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class HeroSlider extends Component {
     render() {
         return (
-            <div className='hero_slide '>
+            <div className='hero_slide ' >
                 <div className="container-fluid ">
                     <div className="row mt-9">
                         <div className="col-md-12 px-0">
@@ -13,7 +13,7 @@ export class HeroSlider extends Component {
                                         <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="img1" />
                                         <div className="row">
                                             <div className="carousel-content ">
-                                                <h1 className=''>India’s Leading Software Development and Consulting Firm</h1>
+                                                <h1 className=''>India's Leading Software Development and Consulting Firm</h1>
                                                 <p className=''>This has been the case since 2022. We help organisations transition by providing powerful and adaptive digital solutions that meet today's needs while also enabling tomorrow's prospects.</p>
                                                 <p>We create solutions for both new and existing enterprises. </p>
                                             </div>

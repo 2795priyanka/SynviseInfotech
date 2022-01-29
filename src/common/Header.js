@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// import {Link} from 'react-router-dom'
+import { HashLink  as Link } from 'react-router-hash-link';
 import logo from '../assets/images/synrise.png'
 import $ from 'jquery';
 export class Header extends Component {
@@ -26,7 +28,7 @@ export class Header extends Component {
         //   });
       
         return (
-            <div className='nav-top'>
+            <div className='nav-top' id='home'>
                 {/* ========topbar start======== */}
               
                <div className="topbar ">
@@ -37,7 +39,7 @@ export class Header extends Component {
                                 <div className="top_left">
                                     <ul className=''>
                                         <li><a href="/"><span><i class="fas fa-phone-alt"></i></span>&nbsp;8909433333,
-                                                       +447868678273(UK)
+                                        +447393679043(UK)
                                             </a></li>
                                             <li><a href="/" className='pl-2'><span><i class="far fa-envelope"></i></span>&nbsp;Synviseinfotech@gmail.com</a></li>
                                     </ul>
@@ -86,28 +88,28 @@ export class Header extends Component {
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                                         <ul class="navbar-nav ml-auto" >
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+                                                <Link smooth class="nav-link" to="#home">HOME <span class="sr-only">(current)</span></Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#about_us">ABOUT</a>
+                                                <Link smooth class="nav-link" to="#about_us">ABOUT</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#services">SERVICE</a>
+                                                <Link smooth class="nav-link" to="#services">SERVICE</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#training">TRAINING</a>
+                                                <Link smooth class="nav-link" to="#training">TRAINING</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#resource">RESOURCES</a>
+                                                <Link smooth class="nav-link" to="#resource">RESOURCES</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#blog">BLOG</a>
+                                                <Link smooth class="nav-link" to="#blog">BLOG</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#team">TEAM</a>
+                                                <Link smooth class="nav-link" to="#team">TEAM</Link>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#contact">CONTACT US</a>
+                                                <Link smooth class="nav-link" to="#contact">CONTACT US</Link>
                                             </li>
 
 

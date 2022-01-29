@@ -41,7 +41,7 @@ export class Footer extends Component {
                         <div className='col-lg-4 col-md-4'>
                             <div className="address">
                                 <h5>Our Address</h5>
-                                <p><span><i class="fas fa-phone-alt"></i></span>&nbsp; 8909433333, +447868678273 (UK)</p>
+                                <p><span><i class="fas fa-phone-alt"></i></span>&nbsp; 8909433333, +447393679043 (UK)</p>
                                 <p><span><i class="fas fa-map-marker-alt"></i></span>&nbsp;G-4 sukhmani plaza Amitesh nagar A.B road Indore</p>
                                 <p><span><i class="far fa-envelope"></i></span>&nbsp; Synviseinfotech@gmail.com</p>
                             </div>
