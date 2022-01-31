@@ -12,16 +12,16 @@ function Contact() {
     const [phone, setPhone] = useState("")
     const [subject, setSubject] = useState("")
     const [message, setMessage] = useState("")
-    // const [error, setError] = useState("")
+  
 
     const navigate = useNavigate();
     useEffect(() => {
 
         $("#name").hide()
         $("#email").hide()
-        // $("#emailcheck").hide();
+      
         $("#phone").hide()
-        $("#phonecheck").hide()
+        $("#phoneCheck").hide()
         $("#subject").hide()
         $("#message").hide()
 
@@ -29,9 +29,9 @@ function Contact() {
     $(".validate").keypress(function () {
         $("#name").hide()
         $("#email").hide()
-        // $("#emailcheck").hide();
+      
         $("#phone").hide()
-        $("#phonecheck").hide()
+        $("#phoneCheck").hide()
         $("#subject").hide()
         $("#message").hide()
     })
@@ -48,7 +48,7 @@ function Contact() {
             $("#phone").show()
         }
         else if ((data.phone).length < 10 || (data.phone).length > 10) {
-            $("#phonecheck").show()
+            $("#phoneCheck").show()
         }
 
         else if (data.subject === undefined || data.subject === "") {
@@ -57,6 +57,7 @@ function Contact() {
         else if (data.message === undefined || data.message === "") {
             $("#message").show()
         }
+       
 
         else {
             axios.post("http://synviseinfo.tech:3000/send_message", data).then((res) => {
@@ -66,7 +67,7 @@ function Contact() {
                     navigate("/")
                 }
             }).catch((err) => {
-                console.log("error while submitting data")
+                console.log("error while submitting data",err)
             })
 
             toast.success('Thankyou for contact!', {
@@ -116,12 +117,12 @@ function Contact() {
                                 <div className="col-md-6 pt-4">
                                     <input type="email" placeholder="Your email address" className="form-control validate" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                     <p className='error' id="email">*Enter valid email</p>
-                                    {/* <p className='error' id="emailcheck">*Email already exist</p> */}
+                                    
                                 </div>
                                 <div className="col-md-12 pt-4">
                                     <input type="number" placeholder="Your phone number" className="form-control validate" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                                     <p className='error' id='phone'>*Enter your phone number </p>
-                                    <p className='error' id='phonecheck'>*Phone number must be 10 digit</p>
+                                    <p className='error' id='phoneCheck'>*Phone number must be 10 digit</p>
                                 </div>
                                 <div className="col-md-12 pt-4">
                                     <input type="text" placeholder="Your Subject" className="form-control validate" value={subject} onChange={(e) => setSubject(e.target.value)} required />

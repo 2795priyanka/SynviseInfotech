@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import {Link} from 'react-router-dom'
+
 import { HashLink  as Link } from 'react-router-hash-link';
 import logo from '../assets/images/synrise.png'
 import $ from 'jquery';
@@ -20,15 +20,16 @@ export class Header extends Component {
             }
         });
 
-        // $(document).ready(function () {
-  
-        //     $(".nav-link").click(function (){
-        //       $(this).addClass("active").siblings().removeClass("active");
-        //     });
+        // $(document).ready(function(){
+        //     $('nav ul li a').click(function(){
+        //       $('li a').removeClass("active");
+        //       $(this).addClass("active");
         //   });
+        //   });
+     
       
         return (
-            <div className='nav-top' id='home'>
+            <div className='' id='home'>
                 {/* ========topbar start======== */}
               
                <div className="topbar ">
@@ -87,7 +88,7 @@ export class Header extends Component {
 
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                                         <ul class="navbar-nav ml-auto" >
-                                            <li class="nav-item active">
+                                            <li class="nav-item ">
                                                 <Link smooth class="nav-link" to="#home">HOME <span class="sr-only">(current)</span></Link>
                                             </li>
                                             <li class="nav-item">

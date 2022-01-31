@@ -9,6 +9,10 @@ body{
   
 
 }
+html {
+   
+    scroll-behavior: smooth;
+}
 .topbar{
     background-color:#e14e4e;
     color: #fff;
@@ -68,14 +72,7 @@ body{
 .header{
     background-color: #fff;
 }
-/* .nav-top{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0px;
-    z-index: 9999;
-    box-shadow: 1px 1px 3px rgb(204, 201, 201);
-} */
+
 .fixed-header {
     position: fixed;
     top: 0;
@@ -95,10 +92,12 @@ nav{
     color: #e14e4e;
     font-weight: 700;
 }
-/* .navbar .active {
-    background-color: #e14e4e;
-    color: #fff;
-    border-radius: 10px;
+ /* .active {
+   background-color: #e14e4e;
+    color: #fff !important;
+    border-radius: 10px; 
+     color: #e14e4e !important;
+    border-bottom: 3px solid #e14e4e;
     
 } */
 .navbar ul li a{
@@ -111,8 +110,8 @@ nav{
     background-color: #e14e4e;
     color: #fff;
     border-radius: 10px;
-  
-    /* color: #e14e4e; */
+    /* border-bottom: 3px solid #e14e4e;
+    color: #e14e4e; */
 }
 
 
@@ -122,9 +121,7 @@ nav{
    width: 100%;
    object-fit: cover;
 }
-/* .hero_slide .mt-9{
-    margin-top: 8.5%;
-} */
+
 .banner::before {
     content: '';
     position: absolute;
@@ -182,18 +179,22 @@ nav{
         display: flex;
         justify-content: center;
      }
-    
-    
+     
+     .footer .social_icon ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-left: -13% !important;
+        padding-top: 15px;
+    }
+    .footer .social_icon ul li{
+        padding-right: 10px !important;
+    }
    
 }
-@media (min-width:768px) and (max-width:1023px){
-    .top_left ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-left: -30%;
-    }
-}
+
+
+
 
 @media (min-width:768px) and (max-width:1023px){
     .hero_slide img{
@@ -214,6 +215,24 @@ nav{
         justify-content: center;
         z-index: 999;
       }
+      .footer .social_icon ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-left: -27% !important;
+        padding-top: 15px;
+    }
+    .footer .social_icon ul li{
+        padding-right: 10px !important;
+    }
+ 
+    .top_left ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -30%;
+    }
+    
 }
 
 
@@ -359,7 +378,7 @@ nav{
     display: flex;
     list-style: none;
     align-items: center;
-    margin-left: -10%;
+    margin-left: -15%;
     padding-top: 15px;
 }
 .footer .social_icon ul li{
@@ -368,17 +387,21 @@ nav{
 .footer .social_icon ul li a{
     color: #e14e4e;
 }
-.footer .links ul{
-    margin-left: -10%;
+/* .footer .links ul{
+    margin-left: -22%;
     list-style: none;
+} */
+.footer .links p{
+   height: 12px;
 }
-.footer .links ul li a{
+.footer .links p a{
     color: #333;
     text-decoration: none;
     line-height: 2;
     font-size: 15px;
+  
 }
-.footer .links ul li a:hover{
+.footer .links p a:hover{
     color: #e14e4e;
 }
 .footer .links h5, .footer .address h5{
@@ -389,8 +412,14 @@ nav{
 .footer .text-color{
     color: #e14e4e;
 }
-
-
+.footer .address h6{
+    color: #e14e4e;
+    font-weight: 500;
+}
+.footer .address p{
+    font-size: 15px;
+   
+}
 .footer .address p:hover{
     color: #e14e4e;
 }
@@ -401,16 +430,18 @@ nav{
     color: #fff;
     border-radius: 100%;
     padding-top: 10px;
-    padding-left: 12px;
+    padding-left: 11px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
 }
 .footer .social_icon i:hover{
     background: #fff;
     color: #e14e4e;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
 }
 
 
 
-/* **************Resurces***************** Css */
+/* **************Resources***************** Css */
 .resource .card h5{
     text-align: center;
     text-transform: capitalize;
@@ -452,7 +483,7 @@ nav{
 .resource .card-img-box{
     width: 100px;
     height: 100px;
-    background-color: rgb(235, 228, 228);
+    background-color: rgb(247, 245, 245);
     border-radius: 100%;
     text-align: center;
     display: flex;
@@ -514,7 +545,7 @@ nav{
     right: 0;
     background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
-    /* background-color: #e14e4e; */
+    
     overflow: hidden;
     width: 100%;
     height: 60px;

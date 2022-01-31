@@ -5,7 +5,7 @@ class AboutUs extends Component {
  render() {
         return (
           
-            <div className='about_us pt-100' id='about_us'>
+            <div className='about_us pt-100 ' id='about_us'>
              
                 <div className="container">
                     <div className="row ">

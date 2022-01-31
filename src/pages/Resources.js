@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-
+import resource1 from '../assets/images/resources/resource1.png'
+import resource2 from '../assets/images/resources/resource2.png'
+import resource3 from '../assets/images/resources/resource3.png'
+import resource4 from  '../assets/images/resources/resource4.png'
+import resource5 from '../assets/images/resources/resource5.png'
 export class Resources extends Component {
     render() {
         return (
@@ -15,7 +19,7 @@ export class Resources extends Component {
                             <div className="col-md-4 col-lg-4">
                                 <div class="card" >
                                 <div className='card-img-box'>
-                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQjGjesqf579xZ26SKFBtH4ij_q6dfiyOtw4FswxOFTig3EG-rI-Pekhi2fWQW5SwS1Ww&usqp=CAU" class="card-img-top" alt="..." />
+                                       <img src= {resource1} class="card-img-top" alt="..." />
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">how can we help</h5>
@@ -28,7 +32,7 @@ export class Resources extends Component {
                             <div className="col-md-4 col-lg-4">
                                 <div class="card" >
                                 <div className='card-img-box'>
-                                       <img src="https://key0.cc/images/preview/85984_4e1845b4e59bbb6d7e7590d6274a9e70.png" class="card-img-top" alt="..." />
+                                       <img src= {resource2} class="card-img-top" alt="..." />
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">grow your business idea</h5>
@@ -40,7 +44,7 @@ export class Resources extends Component {
                             <div className="col-md-4 col-lg-4">
                                 <div class="card" >
                                 <div className='card-img-box'>
-                                       <img src="https://cdn2.iconfinder.com/data/icons/top-business-1/32/business_negotiation_interview_conversation_communication-67-512.png" class="card-img-top" alt="..." />
+                                       <img src={resource3} class="card-img-top" alt="..." />
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">business communications</h5>
@@ -57,7 +61,7 @@ Any business owner needs to be able to communicate effectively. Your ability to 
                             <div className="col-md-6 col-lg-6 ">
                                 <div class="card" >
                                     <div className='card-img-box'>
-                                       <img src="https://c0.klipartz.com/pngpicture/145/561/gratis-png-gestion-de-control-de-calidad-iconos-de-la-computadora-negocios-thumbnail.png" class="card-img-top" alt="..." />
+                                       <img src={resource4} class="card-img-top" alt="..." />
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">quality assurance</h5>
@@ -69,7 +73,7 @@ Any business owner needs to be able to communicate effectively. Your ability to 
                             <div className="col-md-6 col-lg-6">
                                 <div class="card" >
                                 <div className='card-img-box'>
-                                       <img src="https://previews.123rf.com/images/sanek13744/sanek137441905/sanek13744190500076/123356413-operation-project-icon-in-transparent-style-gear-process-vector-illustration-on-isolated-background-.jpg" class="card-img-top" alt="..." />
+                                       <img src= {resource5} class="card-img-top" alt="..." />
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">our work process</h5>
